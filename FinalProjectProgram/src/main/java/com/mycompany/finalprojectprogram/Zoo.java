@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Zoo {
     public static void main(String arg[]) {
-      
+      System.out.println("k");
    }
     
 }
