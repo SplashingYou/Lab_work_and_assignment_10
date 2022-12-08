@@ -9,11 +9,6 @@ package com.mycompany.final_project_zoo_program;
  *
  * @author Richard Williams IV
  */
-    interface Animal_Actions {
-        void playAnimalSound();
-        void displayAniamlInformation();
-        
-        
-    
+public class NewClass {
     
 }

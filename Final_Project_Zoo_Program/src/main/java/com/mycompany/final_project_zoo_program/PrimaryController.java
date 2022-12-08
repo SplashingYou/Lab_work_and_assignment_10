@@ -8,10 +8,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class PrimaryController {
+public class PrimaryController extends Zoo {
+    
+    Zoo zoo = new Zoo("Virtual Zoo");
     
     @FXML
-    Button selScreenbtn,homeScreeenbtn; 
+    Button selScreenbtn,exhibitScreenbtn,playAnimalBirdSoundbtn; 
 
     @FXML
     private void handleSelectScreenButton() throws IOException {
@@ -19,5 +21,20 @@ public class PrimaryController {
         Parent root = FXMLLoader.load(getClass().getResource("secondary.fxml"));
         Stage window = (Stage) selScreenbtn.getScene().getWindow();
         window.setScene(new Scene(root,640,480));
+    }
+    
+    @FXML
+     private void handlePlayAnimalButton() throws IOException{
+         
+     }
+    
+    @FXML
+    private void handleExhibitScreenButton() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Exhibit Screen.fxml"));
+        Stage window = (Stage) exhibitScreenbtn.getScene().getWindow();
+        window.setScene(new Scene(root,640,480));
+        
+    
+    
     }
 }

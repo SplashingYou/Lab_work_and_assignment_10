@@ -10,7 +10,7 @@ package com.mycompany.final_project_zoo_program;
  *
  * @author Richard Williams IV
  */
-public class Bird extends Animal implements Animal_Actions{
+public class Bird extends Animal implements Animal_Actions {
     private double wingSpan;
     private String birdColor;
     
@@ -22,6 +22,7 @@ public class Bird extends Animal implements Animal_Actions{
     public Bird(double length, String color){
     wingSpan = length;
     birdColor = color;
+    
     
     
     }
@@ -44,11 +45,46 @@ public class Bird extends Animal implements Animal_Actions{
     }
     
     @Override
-    public void animalSound() {
+    public String toString(){
+        return birdColor + " " + wingSpan + " ";
+    }
+    
+    @Override
+    public boolean equals(Object k){
+        if (k == this) {
+         return true;
+      }
+      if (!(k instanceof Bird)) {
+         return false;
+      }
+       Bird a = (Bird) k;
+       
+       return birdColor.equals(a.birdColor) && wingSpan == a.wingSpan;
+       
+    }
+    
+    @Override 
+    public void playAnimalSound(){
+        
+    }
+    
+    @Override
+    public void displayAniamlInformation(){
+        System.out.println("Species Name: " + Bird.this.getSpeciesName());
+        System.out.println("Species Type: " + Bird.this.getSpeciesType());
+        System.out.println("Species Life Expectancy: " + Bird.this.getLifeExpectancy());
+        System.out.println("Spcecies Wing Span: " + Bird.this.getWingSpan() + "cm");
+        System.out.println("Species Color: " + Bird.this.getBirdColor());
+        
+        
+        
+    }
+    
+    
     
   }
 
     
     
     
-}
+

@@ -12,5 +12,64 @@ package com.mycompany.final_project_zoo_program;
 public class Animal {
    private String speciesName;
    private String speciesType;
+   private int lifeExpectancy;
+   
+   public Animal(){
+       speciesName = "PLACE HOLDER";
+       speciesType = "PLACE HOLDER";
+       lifeExpectancy = 0;
+   }
+   
+   public Animal(String n, String t, int le){
+       speciesName = n;
+       speciesType = t;
+       lifeExpectancy = 0;
+   }
+   
+   public String getSpeciesName(){
+       return speciesName;
+   }
+   
+   public void setSpeciesName(String name){
+       speciesName = name;
+   }
+   
+   public String getSpeciesType(){
+       return speciesType;
+   }
+   
+   public void setSpeciesType(String type){
+       speciesType = type;
+   }
+   
+   public int getLifeExpectancy(){
+       return lifeExpectancy;
+   }
+   
+   public void setLifeExpectancy(int expectancy){
+       lifeExpectancy = expectancy;
+   }
+   
+   @Override
+   public boolean equals(Object j){
+       if (j == this) {
+         return true;
+      }
+      if (!(j instanceof Animal)) {
+         return false;
+      }
+       Animal a = (Animal) j;
+       
+       return speciesName.equals(a.speciesName) && speciesType.equals(a.speciesType) && lifeExpectancy == a.lifeExpectancy;
+       
+       
+   
+   }
+   
+   @Override
+   public String toString(){
+       return speciesName + speciesType + lifeExpectancy;
+   
+   }
     
 }
