@@ -1,5 +1,10 @@
 package com.mycompany.final_project_zoo_program;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.File;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -65,14 +70,15 @@ public class Bird extends Animal implements Animal_Actions {
     
     @Override 
     public void playAnimalSound(){
-        
+        System.out.println("Squawk! Squawk!");
+         
     }
     
     @Override
     public void displayAniamlInformation(){
         System.out.println("Species Name: " + Bird.this.getSpeciesName());
         System.out.println("Species Type: " + Bird.this.getSpeciesType());
-        System.out.println("Species Life Expectancy: " + Bird.this.getLifeExpectancy());
+        System.out.println("Species Life Expectancy: " + Bird.this.getLifeExpectancy() + " years");
         System.out.println("Spcecies Wing Span: " + Bird.this.getWingSpan() + "cm");
         System.out.println("Species Color: " + Bird.this.getBirdColor());
         
