@@ -9,7 +9,7 @@ package com.mycompany.final_project_zoo_program;
  *
  * @author Richard Williams IV
  */
-public class Animal {
+public class Animal implements Animal_Actions {
    private String speciesName;
    private String speciesType;
    private int lifeExpectancy;
@@ -65,6 +65,12 @@ public class Animal {
        
    
    }
+   
+   @Override
+   public void playAnimalSound(){}
+   
+   @Override
+   public void displayAnimalInformation(){}
    
    @Override
    public String toString(){

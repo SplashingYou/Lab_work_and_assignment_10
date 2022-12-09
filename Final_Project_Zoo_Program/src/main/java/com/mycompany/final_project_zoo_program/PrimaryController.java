@@ -41,7 +41,7 @@ public class PrimaryController extends Zoo {
      
      @FXML
      private void handleDisplayAnimalDescriptionButton(){
-         ((Bird)zoo.getZooAnimalFromArray()).displayAniamlInformation();
+         ((Bird)zoo.getZooAnimalFromArray()).displayAnimalInformation();
      }
     
     @FXML

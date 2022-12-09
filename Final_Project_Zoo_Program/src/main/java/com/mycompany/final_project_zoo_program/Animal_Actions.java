@@ -11,7 +11,7 @@ package com.mycompany.final_project_zoo_program;
  */
     interface Animal_Actions {
         void playAnimalSound();
-        void displayAniamlInformation();
+        void displayAnimalInformation();
         
         
     

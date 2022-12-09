@@ -75,7 +75,7 @@ public class Bird extends Animal implements Animal_Actions {
     }
     
     @Override
-    public void displayAniamlInformation(){
+    public void displayAnimalInformation(){
         System.out.println("Species Name: " + Bird.this.getSpeciesName());
         System.out.println("Species Type: " + Bird.this.getSpeciesType());
         System.out.println("Species Life Expectancy: " + Bird.this.getLifeExpectancy() + " years");
