@@ -66,7 +66,7 @@ public class Lab_04_Assignment {
         
 
     public static void main(String[] args) {
-        sumOfnums(0,21);
+        
         
       
     }
