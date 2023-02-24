@@ -67,7 +67,7 @@ public class Lab_04_Assignment {
 
     public static void main(String[] args) {
         
-        
+        int x;
       
     }
 }
